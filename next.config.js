@@ -7,6 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/portfolio', // uncomment only if deploying to a subpath
+  assetPrefix: '/portfolio/', // ✅ ensures _next/ assets are fetched correctly
   eslint: {
     ignoreDuringBuilds: true,
   },
