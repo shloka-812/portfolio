@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
   output: 'export',
   images: {
@@ -7,11 +6,10 @@ const nextConfig = {
     loaderFile: './src/lib/imageLoader.ts',
     unoptimized: true,
   },
-  // basePath: '/portfolio',
-  distDir: 'out',
+  basePath: '/portfolio', // uncomment only if deploying to a subpath
   eslint: {
     ignoreDuringBuilds: true,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
